@@ -1,0 +1,84 @@
+/* For Table */
+/* ---------------------------------------------------------------- */
+.fixedHead {
+    overflow-y: auto;
+    height: 250px;
+    padding-top: 20px;
+}
+.fixedHead thead th {
+    position: sticky;
+    top: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px 15px;
+    border: 0px;
+    width: 100%;
+}
+th {
+    background: #4169E1;
+    color: white;
+}
+/* ---------------------------------------------------------------- */
+
+.lower {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.upper-center {
+    margin: auto;
+    width: 50%;
+    padding-left: 200px;
+}
+
+.mul-select {
+    margin: auto;
+    width: 85%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.searchButton {
+    margin-left: 20px;
+    height: 38px;
+    width: 80px;
+    background-color: #4169E1;
+    font-size: 16px;
+    color: white;
+}
+
+.upper {
+    height: 330px;
+    width: 330px;
+    position: relative;
+}
+.upper img {
+    height: 100%;
+    width: 100%;
+}
+
+.transition-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    animation-name: transition;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+@keyframes transition {
+    0% {opacity: 1;}
+    45% {opacity: 1;}
+    55% {opacity: 0;}
+    100% {opacity: 0;}
+}

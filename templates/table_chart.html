@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>IR PROJECT</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="lower">
+    <div class="form">
+        <form action="/table_chart" method="POST">
+            <!-- Multi-Select Box -->
+            <select class="mul-select" multiple="true" name="multiInput" required>
+                <option value="nandigram">nandigram</option>
+                <option value="bengal">bengal</option>
+                <option value="westbengal">westbengal</option>
+                <option value="mamatabanerjee">mamatabanerjee</option>
+                <option value="bjp">bjp</option>
+                <option value="mothersday">mothersday</option>
+                <option value="bengalelection2021">bengalelection2021</option>
+                <option value="suvenduadhikari">suvenduadhikari</option>
+                <option value="bengalelections2021">bengalelections2021</option>
+                <option value="mciche">mciche</option>
+                <option value="dogetothemoon">dogetothemoon</option>
+                <option value="mamtabanerjee">mamtabanerjee</option>
+                <option value="khelahobe">khelahobe</option>
+                <option value="savesheikhjarrah">savesheikhjarrah</option>
+                <option value="kamalhaasan">kamalhaasan</option>
+                <option value="tmc">tmc</option>
+                <option value="electionresult">electionresult</option>
+                <option value="exitmodi">exitmodi</option>
+                <option value="boycottisrael">boycottisrael</option>
+                <option value="didi_o_didi">didi_o_didi</option>
+                <option value="dogecoin">dogecoin</option>
+                <option value="bengalelection">bengalelection</option>
+                <option value="freepalestine">freepalestine</option>
+                <option value="thegreatprophecies_revealed">thegreatprophecies_revealed</option>
+                <option value="nomoremodi">nomoremodi</option>
+                <option value="bjpkorbe200paar">bjpkorbe200paar</option>
+                <option value="westbengalelections2021">westbengalelections2021</option>
+                <option value="breaking">breaking</option>
+                <option value="doge">doge</option>
+                <option value="electionresults">electionresults</option>
+                <option value="hbdvijaydeverakonda">hbdvijaydeverakonda</option>
+                <option value="didi">didi</option>
+                <option value="spanishgp">spanishgp</option>
+                <option value="palestine">palestine</option>
+                <option value="westbengalpolls">westbengalpolls</option>
+                <option value="dogesnl">dogesnl</option>
+                <option value="happymothersday">happymothersday</option>
+                <option value="assemblyelections2021">assemblyelections2021</option>
+                <option value="chineserocket">chineserocket</option>
+                <option value="kerala">kerala</option>
+                <option value="elections2021">elections2021</option>
+                <option value="justice_for_bangalihindus">justice_for_bangalihindus</option>
+                <option value="alaqsamosque">alaqsamosque</option>
+                <option value="indiastandswithpalestine">indiastandswithpalestine</option>
+                <option value="modi">modi</option>
+                <option value="tamilnadu">tamilnadu</option>
+                <option value="kamal">kamal</option>
+                <option value="covid19">covid19</option>
+                <option value="vanathi">vanathi</option>
+                <option value="israeliattackonalaqsa">israeliattackonalaqsa</option>
+                <option value="completedvandmptetjoining">completedvandmptetjoining</option>
+                <option value="jerusalem">jerusalem</option>
+                <option value="dogecointo1dollar">dogecointo1dollar</option>
+                <option value="cfc">cfc</option>
+                <option value="tmc200paar">tmc200paar</option>
+                <option value="assam">assam</option>
+                <option value="coimbatoresouth">coimbatoresouth</option>
+                <option value="1700dayswithawake">1700dayswithawake</option>
+                <option value="tnelections2021">tnelections2021</option>
+                <option value="narendramodi">narendramodi</option>
+                <option value="2yearsformaharshimania">2yearsformaharshimania</option>
+                <option value="dmk">dmk</option>
+                <option value="dogearmy">dogearmy</option>
+                <option value="prashantkishore">prashantkishore</option>
+                <option value="vijaydeverakonda">vijaydeverakonda</option>
+                <option value="bihar">bihar</option>
+                <option value="electionresults2021">electionresults2021</option>
+                <option value="westbengalelections">westbengalelections</option>
+                <option value="liger">liger</option>
+                <option value="chennai">chennai</option>
+                <option value="vanathisrinivasan">vanathisrinivasan</option>
+                <option value="pinarayivijayan">pinarayivijayan</option>
+                <option value="israel">israel</option>
+                <option value="mothersday2021">mothersday2021</option>
+                <option value="maharanapratapjayanti">maharanapratapjayanti</option>
+                <option value="releaseasharambapu">releaseasharambapu</option>
+                <option value="f1">f1</option>
+                <option value="dogefather">dogefather</option>
+                <option value="votecounting">votecounting</option>
+                <option value="palestinianslivesmatter">palestinianslivesmatter</option>
+                <option value="alaqsaunderattack">alaqsaunderattack</option>
+                <option value="dharapuram">dharapuram</option>
+                <option value="motherhood">motherhood</option>
+                <option value="farmlawsscamwithfarmers">farmlawsscamwithfarmers</option>
+                <option value="sheikhjarrah">sheikhjarrah</option>
+                <option value="tamilnaduelection2021">tamilnaduelection2021</option>
+                <option value="harbour">harbour</option>
+                <option value="sekarbabu">sekarbabu</option>
+                <option value="mkstalin">mkstalin</option>
+                <option value="alaqsa">alaqsa</option>
+                <option value="vinojpselvam">vinojpselvam</option>
+                <option value="electionresult2021">electionresult2021</option>
+                <option value="happymothersday2021">happymothersday2021</option>
+                <option value="india">india</option>
+                <option value="whereisrss">whereisrss</option>
+            </select>
+
+            <!-- Submit Button -->
+            <input class="searchButton" type="submit" value="Search" id="Search">
+        </form>
+    </div>
+
+    <div class="forAlert" style="visibility: {{ hideH1 }};">
+        <h2>
+            <br>
+            <br>
+            Hey! It looks like you haven't chosen any of the listed options. At least one option needs to be selected!
+        </h2>
+    </div>
+
+    <div id="ranking_table" class="fixedHead" style="visibility: {{ hideTable }};">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <script>
+                    fetch("{{ url_for('static', filename='result.json') }}")
+                        .then(response => response.json())
+                        .then(data => {
+                            var student = '';
+
+                            $.each(data, function (key, value) {
+                                student += '<tr>';
+                                student += '<td>' + value.username + '</td>';
+                                student += '<td>' + value.score + '</td>';
+                                student += '</tr>';
+                            });
+
+                            $('#ranking_table').append(student);
+                        })
+                </script>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <!-- For Multi-Select Box -->
+    <script>
+        $(document).ready(function(){
+            $(".mul-select").select2({
+                placeholder: " Enter/Select Hashtag(s)",
+                tags: true,
+                tokenSeparators: ['/', ',', ' ']
+            });
+        })
+    </script>
+{% endblock %}
